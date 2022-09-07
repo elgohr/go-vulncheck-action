@@ -1,0 +1,10 @@
+name: 'govulncheck'
+author: 'Lars Gohr'
+branding:
+  icon: 'check'
+  color: 'blue'
+description: 'Scans golang using govulncheck'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+      

@@ -1,9 +1,10 @@
 # Easily using govulncheck in GitHub Actions
 [![Release](https://github.com/elgohr/go-vulncheck-action/workflows/Release/badge.svg)](https://github.com/elgohr/go-vulncheck-action/actions/workflows/release.yml)
 
+Using [govulncheck](https://go.dev/blog/vuln)
+
 ## Usage
 
-## Example pipeline
 ```yaml
 name: govulncheck 
 on: [push]

@@ -14,5 +14,5 @@ jobs:
       contents: read
     steps:
     - uses: actions/checkout@v3
-    - uses: elgohr/go-vulncheck-action@main
+    - uses: elgohr/go-vulncheck-action@v1
 ```

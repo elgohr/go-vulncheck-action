@@ -4,7 +4,14 @@ branding:
   icon: 'check'
   color: 'blue'
 description: 'Scans golang using govulncheck'
+inputs:
+  args:
+    description: 'Arguments passed to govulncheck'
+    required: false
+    default: './...'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  env:
+    INPUT_ARGS: ${{ inputs.args }}
       

@@ -1,3 +1,3 @@
 #!/bin/sh
 set -e
-govulncheck ./...
+govulncheck "${INPUT_ARGS}"

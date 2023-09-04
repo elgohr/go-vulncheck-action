@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: docker build .
   release:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
     needs:
       - test
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.PUBLISH_TOKEN }} # for pushing to protected branch
       - name: Publish new version
